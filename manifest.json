@@ -1,7 +1,7 @@
 {
   "name": "AVO-BIO — Sistem Biogas Berbasis Hukum Avogadro & AI",
   "short_name": "AVO-BIO",
-  "description": "Dashboard monitoring biogas kotoran ayam real-time berbasis Hukum Avogadro dan AI untuk kompetisi KILAT KNEC 2026.",
+  "description": "Dashboard monitoring biogas kotoran ayam real-time berbasis Hukum Avogadro dan AI.",
   "start_url": "./avobio.html",
   "scope": "./",
   "display": "standalone",
