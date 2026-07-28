@@ -234,10 +234,6 @@ body{display:flex;overflow:hidden}
 .k-l{font-size:9px;color:var(--txm);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
 .k-v{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--tx);line-height:1.1}
 
-/* === REF BOX === */
-.ref-box{background:var(--bd2);border-radius:9px;padding:10px 12px;font-size:10px;color:var(--txm);line-height:1.6;border-left:3px solid var(--g1)}
-.ref-box strong{color:var(--g1)}
-
 /* === TOAST === */
 #toast{position:fixed;bottom:20px;right:20px;background:var(--g3);color:#fff;padding:11px 16px;border-radius:10px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:8px;box-shadow:var(--sh2);opacity:0;transform:translateY(12px);transition:all .3s;z-index:9999;pointer-events:none}
 #toast.show{opacity:1;transform:translateY(0)}
@@ -550,7 +546,6 @@ body{display:flex;overflow:hidden}
     <div style="font-size:11px;color:var(--tx);line-height:1.7">
       <strong>AI mendeteksi anomali jika produksi gas menurun padahal substrat tetap →</strong> kemungkinan inhibisi oleh amonia, perubahan suhu ekstrem, atau kebocoran tabung. Sistem langsung mengirim peringatan ke peternak via WhatsApp/SMS dengan rekomendasi tindakan spesifik.
     </div>
-    <div class="ref-box" style="margin-top:10px"><strong>Cinar et al., 2021:</strong> "Integrasi AI dan sensor IoT meningkatkan stabilitas proses dan konsentrasi metana secara signifikan dibandingkan sistem manual."</div>
   </div>
 </div>
 
@@ -610,8 +605,6 @@ body{display:flex;overflow:hidden}
       <tbody id="anomali-body"><tr><td colspan="5" style="text-align:center;color:var(--txm);padding:24px">Tidak ada anomali. Sistem berjalan normal. ✓</td></tr></tbody></table>
     </div>
   </div>
-
-  <div class="ref-box"><strong>Cinar et al., 2021:</strong> "Integrasi AI dan sensor IoT meningkatkan stabilitas proses anaerobik dan konsentrasi metana secara signifikan, dengan sistem peringatan dini mengurangi downtime hingga 60%."</div>
 </div>
 
 <!-- ============ OUTPUT PRODUK ============ -->
@@ -654,7 +647,7 @@ body{display:flex;overflow:hidden}
       <div class="prod-feat">Generator aerator kolam ikan</div>
       <div class="prod-feat">Pemanas brooding anak ayam DOC</div>
       <div class="prod-feat">Kompor gas dapur peternakan</div>
-      <div style="margin-top:10px;font-size:9.5px;color:var(--txm)"><em>1 m³ CH₄ ≈ 6 kWh · Cinar et al., 2021</em></div>
+      <div style="margin-top:10px;font-size:9.5px;color:var(--txm)"><em>1 m³ CH₄ ≈ 6 kWh</em></div>
     </div>
 
     <!-- CARD 2: POC -->
@@ -682,7 +675,7 @@ body{display:flex;overflow:hidden}
       <div class="prod-feat">Pakan alternatif ikan budidaya</div>
       <div class="prod-feat">Pakan ayam broiler</div>
       <div class="prod-feat">Kurangi biaya pakan 30–40%</div>
-      <div style="margin-top:10px;font-size:9.5px;color:var(--txm)"><em>Kandungan protein 40–48% · Munguti et al., 2025</em></div>
+      <div style="margin-top:10px;font-size:9.5px;color:var(--txm)"><em>Kandungan protein 40–48%</em></div>
     </div>
   </div>
 </div>
@@ -716,11 +709,7 @@ body{display:flex;overflow:hidden}
         <div><span style="color:var(--txm);display:block;font-size:9.5px;margin-bottom:2px">Polling IoT</span><strong>3000 ms real-time</strong></div>
       </div>
       <div style="margin-top:14px;font-size:9.5px;color:var(--txm);line-height:1.7">
-        <strong style="color:var(--tx)">Referensi:</strong><br>
-        · Tawfik et al., 2023 — 0.5 m³/kg biogas, CH₄ 58%<br>
-        · Cinar et al., 2021 — AI+IoT stabilitas proses<br>
-        · Munguti et al., 2025 — Maggot BSF protein 40–48%<br>
-        · Hukum Avogadro: n = PV/RT, R = 8.314 J/mol·K
+        <strong style="color:var(--tx)">Rumus:</strong> Hukum Avogadro n = PV/RT, R = 8.314 J/mol·K
       </div>
     </div>
   </div>
