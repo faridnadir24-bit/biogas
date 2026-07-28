@@ -331,7 +331,7 @@ body{display:flex;overflow:hidden}
     <div class="kpi-item"><div class="kpi-dot" style="background:#2E86C1"></div><div><div class="k-l">Kemurnian CH₄</div><div class="k-v" id="kpi-ch4">58.0%</div></div></div>
     <div class="kpi-item"><div class="kpi-dot" style="background:#F39C12"></div><div><div class="k-l">Suhu Reaktor</div><div class="k-v" id="kpi-tmp">37.0°C</div></div></div>
     <div class="kpi-item"><div class="kpi-dot" style="background:#7D3C98"></div><div><div class="k-l">pH Slurry</div><div class="k-v" id="kpi-ph">7.05</div></div></div>
-    <div class="kpi-item"><div class="kpi-dot" style="background:#E74C3C"></div><div><div class="k-l">Tekanan</div><div class="k-v" id="kpi-tek">12.4 kPa</div></div></div>
+    <div class="kpi-item"><div class="kpi-dot" style="background:#E74C3C"></div><div><div class="k-l">Tekanan</div><div class="k-v" id="kpi-tek">1.20 atm</div></div></div>
   </div>
 
   <div class="g2">
@@ -339,7 +339,7 @@ body{display:flex;overflow:hidden}
     <div class="avo-meter">
       <div class="avo-title">⚗️ Avogadro Meter — Real-Time n = PV/RT</div>
       <div class="avo-formula">
-        <div class="avo-var"><div class="avo-sym" id="avo-P">12.4k</div><div class="avo-desc">P (Pa)</div></div>
+        <div class="avo-var"><div class="avo-sym" id="avo-P">121.6k</div><div class="avo-desc">P (Pa)</div></div>
         <div class="avo-eq">×</div>
         <div class="avo-var"><div class="avo-sym" id="avo-V">0.000</div><div class="avo-desc">V (m³)</div></div>
         <div class="avo-eq">=</div>
@@ -350,7 +350,7 @@ body{display:flex;overflow:hidden}
         <div class="avo-var"><div class="avo-sym" id="avo-T">310.1</div><div class="avo-desc">T (K)</div></div>
       </div>
       <div class="avo-grid">
-        <div class="avo-param"><div class="avo-param-l">Tekanan P</div><div class="avo-param-v" id="ap-P">12.400</div><div class="avo-param-u">kPa</div></div>
+        <div class="avo-param"><div class="avo-param-l">Tekanan P</div><div class="avo-param-v" id="ap-P">1.200</div><div class="avo-param-u">atm</div></div>
         <div class="avo-param"><div class="avo-param-l">Volume V</div><div class="avo-param-v" id="ap-V">0.000</div><div class="avo-param-u">m³</div></div>
         <div class="avo-param"><div class="avo-param-l">Suhu T</div><div class="avo-param-v" id="ap-T">310.2</div><div class="avo-param-u">K</div></div>
       </div>
@@ -455,8 +455,8 @@ body{display:flex;overflow:hidden}
     <div>
       <div class="g2" style="margin-bottom:14px">
         <div class="card metric"><div class="m-ico my">🌡️</div><div class="m-lbl">Suhu Reaktor</div><div class="m-val"><span id="tb-tmp">37.0</span><span> °C</span></div><div class="m-st st-ok" id="tb-tmp-st">● Target 35–37°C</div></div>
-        <div class="card metric"><div class="m-ico mb">🧪</div><div class="m-lbl">pH Slurry</div><div class="m-val"><span id="tb-ph">7.05</span></div><div class="m-st st-ok" id="tb-ph-st">● Target 6.8–7.2</div></div>
-        <div class="card metric"><div class="m-ico" style="background:#FDEDEC;color:#E74C3C">📊</div><div class="m-lbl">Tekanan</div><div class="m-val"><span id="tb-tek">12.4</span><span> kPa</span></div><div class="m-st st-ok" id="tb-tek-st">● Normal</div></div>
+        <div class="card metric"><div class="m-ico mb">🧪</div><div class="m-lbl">pH Slurry</div><div class="m-val"><span id="tb-ph">7.05</span></div><div class="m-st st-ok" id="tb-ph-st">● Target 6.8–7.4</div></div>
+        <div class="card metric"><div class="m-ico" style="background:#FDEDEC;color:#E74C3C">📊</div><div class="m-lbl">Tekanan</div><div class="m-val"><span id="tb-tek">1.20</span><span> atm</span></div><div class="m-st st-ok" id="tb-tek-st">● Normal</div></div>
         <div class="card metric"><div class="m-ico mg">🔥</div><div class="m-lbl">Volume Gas</div><div class="m-val"><span id="tb-vol">0.000</span><span> m³</span></div><div class="m-st st-ok">● Akumulasi</div></div>
       </div>
       <div class="card mb">
@@ -501,9 +501,9 @@ body{display:flex;overflow:hidden}
       <div class="calc-inputs">
         <div class="calc-inp-wrap">
           <label>P — TEKANAN</label>
-          <div class="calc-formula-big">P (kPa)</div>
-          <input class="calc-inp" type="number" id="ci-P" value="12.4" step="0.1" oninput="calcMol()">
-          <div class="calc-inp-unit">kPa (1 kPa = 1000 Pa)</div>
+          <div class="calc-formula-big">P (atm)</div>
+          <input class="calc-inp" type="number" id="ci-P" value="1.2" step="0.05" oninput="calcMol()">
+          <div class="calc-inp-unit">atm (1 atm = 101.325 kPa)</div>
         </div>
         <div class="calc-inp-wrap">
           <label>V — VOLUME</label>
@@ -569,13 +569,13 @@ body{display:flex;overflow:hidden}
     <div class="ai-rec">
       <div class="ai-rec-h"><div class="ai-dot" style="background:#4ade80"></div><div class="ai-rec-title">AI Status: ONLINE · Memantau 5 Parameter</div></div>
       <div class="ai-item"><div class="ai-ico">🌡️</div><div class="ai-txt"><strong>Suhu Reaktor — Optimal</strong>Suhu <span id="ai-tmp">37.0</span>°C berada dalam zona mesofilik ideal 35–37°C. Bakteri metanogen aktif. Pertahankan kondisi ini.<div class="ai-conf">Status: NORMAL · Confidence 96.2%</div></div></div>
-      <div class="ai-item"><div class="ai-ico">🧪</div><div class="ai-txt"><strong>pH Slurry — Perhatian</strong>pH <span id="ai-ph">7.05</span> mendekati batas atas 7.2. Monitor ketat. Jika pH >7.2, tambahkan buffer asam (larutan HCl encer 0.1M).<div class="ai-conf">Status: WATCH · Confidence 82.1%</div></div></div>
-      <div class="ai-item"><div class="ai-ico">📊</div><div class="ai-txt"><strong>Tekanan Tabung — Normal</strong>Tekanan <span id="ai-tek">12.4</span> kPa. Tidak ada indikasi kebocoran. Produksi gas berjalan lancar sesuai progres fermentasi.<div class="ai-conf">Status: NORMAL · Confidence 94.7%</div></div></div>
+      <div class="ai-item"><div class="ai-ico">🧪</div><div class="ai-txt"><strong>pH Slurry — Perhatian</strong>pH <span id="ai-ph">7.05</span> mendekati batas atas 7.4. Monitor ketat. Jika pH >7.4, tambahkan buffer asam (larutan HCl encer 0.1M).<div class="ai-conf">Status: WATCH · Confidence 82.1%</div></div></div>
+      <div class="ai-item"><div class="ai-ico">📊</div><div class="ai-txt"><strong>Tekanan Tabung — Normal</strong>Tekanan <span id="ai-tek">1.20</span> atm. Tidak ada indikasi kebocoran. Produksi gas berjalan lancar sesuai progres fermentasi.<div class="ai-conf">Status: NORMAL · Confidence 94.7%</div></div></div>
       <div class="ai-item"><div class="ai-ico">⚗️</div><div class="ai-txt"><strong>Produksi Mol CH₄ — Meningkat</strong>Jumlah mol CH₄ terhitung <span id="ai-mol">0.000</span> mol via PV=nRT. Tren 48 jam menunjukkan peningkatan produksi sesuai kurva fermentasi hari ke-8.<div class="ai-conf">Status: BAIK · Confidence 88.5%</div></div></div>
     </div>
     <div>
       <div class="card mb">
-        <div class="ct">📈 Prediksi Produksi 48 Jam ke Depan <span class="ct-r" id="pred-acc">R²=0.984 · MAPE=3.5%</span></div>
+        <div class="ct">📈 Prediksi Produksi 6 Jam ke Depan <span class="ct-r" id="pred-acc">R²=0.984 · RMSE=0.036 m³ · MAPE=3.5%</span></div>
         <div class="cw md"><canvas id="ch-pred"></canvas></div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
@@ -585,7 +585,7 @@ body{display:flex;overflow:hidden}
             <div class="notif-app">WhatsApp · AVO-BIO AI</div>
             <div class="notif-time" id="notif-time">17:24</div>
           </div>
-          <div class="notif-body" id="notif-body">✅ <strong>AVO-BIO NORMAL</strong><br>Suhu: 37.0°C · pH: 7.05<br>Gas: 0.000 m³ · Tekanan: 12.4 kPa<br><em style="font-size:10px;color:rgba(255,255,255,.4)">Update otomatis tiap 5 menit</em></div>
+          <div class="notif-body" id="notif-body">✅ <strong>AVO-BIO NORMAL</strong><br>Suhu: 37.0°C · pH: 7.05<br>Gas: 0.000 m³ · Tekanan: 1.20 atm<br><em style="font-size:10px;color:rgba(255,255,255,.4)">Update otomatis tiap 5 menit</em></div>
         </div>
         <div class="notif-sim">
           <div class="notif-header">
@@ -707,8 +707,8 @@ body{display:flex;overflow:hidden}
       <div class="set-row"><div class="set-info"><div class="set-nm">Suhu Minimum</div><div class="set-desc">Batas bawah zona mesofilik</div></div><div class="set-inp-wrap"><input class="set-inp" type="number" id="cfg-tmin" value="35" step="0.5"><span class="set-unit">°C</span></div></div>
       <div class="set-row"><div class="set-info"><div class="set-nm">Suhu Maksimum</div><div class="set-desc">Batas atas zona mesofilik</div></div><div class="set-inp-wrap"><input class="set-inp" type="number" id="cfg-tmax" value="42" step="0.5"><span class="set-unit">°C</span></div></div>
       <div class="set-row"><div class="set-info"><div class="set-nm">pH Minimum</div><div class="set-desc">Asiditas kritis metanogen</div></div><div class="set-inp-wrap"><input class="set-inp" type="number" id="cfg-phmin" value="6.8" step="0.1"><span class="set-unit">pH</span></div></div>
-      <div class="set-row"><div class="set-info"><div class="set-nm">pH Maksimum</div><div class="set-desc">Alkalinitas berlebih</div></div><div class="set-inp-wrap"><input class="set-inp" type="number" id="cfg-phmax" value="7.5" step="0.1"><span class="set-unit">pH</span></div></div>
-      <div class="set-row"><div class="set-info"><div class="set-nm">Tekanan Maksimum</div><div class="set-desc">Batas aman tabung</div></div><div class="set-inp-wrap"><input class="set-inp" type="number" id="cfg-tekmax" value="30" step="0.5"><span class="set-unit">kPa</span></div></div>
+      <div class="set-row"><div class="set-info"><div class="set-nm">pH Maksimum</div><div class="set-desc">Alkalinitas berlebih</div></div><div class="set-inp-wrap"><input class="set-inp" type="number" id="cfg-phmax" value="7.4" step="0.1"><span class="set-unit">pH</span></div></div>
+      <div class="set-row"><div class="set-info"><div class="set-nm">Tekanan Maksimum</div><div class="set-desc">Batas aman tabung</div></div><div class="set-inp-wrap"><input class="set-inp" type="number" id="cfg-tekmax" value="1.5" step="0.05"><span class="set-unit">atm</span></div></div>
     </div>
     <div class="card">
       <div class="ct">ℹ️ Informasi Sistem</div>
@@ -731,7 +731,7 @@ body{display:flex;overflow:hidden}
   <div class="card">
     <div class="ct" style="margin-bottom:10px">📋 Log Aktivitas Sensor <span class="ct-r" id="log-cnt">0 entri</span></div>
     <div style="overflow-x:auto">
-      <table class="tbl"><thead><tr><th>Waktu</th><th>Suhu (°C)</th><th>pH</th><th>Tekanan (kPa)</th><th>Vol Gas (m³)</th><th>Mol CH₄</th><th>Status</th></tr></thead>
+      <table class="tbl"><thead><tr><th>Waktu</th><th>Suhu (°C)</th><th>pH</th><th>Tekanan (atm)</th><th>Vol Gas (m³)</th><th>Mol CH₄</th><th>Status</th></tr></thead>
       <tbody id="log-body"><tr><td colspan="7" style="text-align:center;color:var(--txm);padding:20px">Menunggu data sensor...</td></tr></tbody></table>
     </div>
   </div>
@@ -745,8 +745,10 @@ Chart.defaults.font.family="'Inter',sans-serif";Chart.defaults.color='#5A7A68';
 
 // === CONFIG ===
 const R=8.314;
-let CFG={tmin:35,tmax:42,phmin:6.8,phmax:7.5,tekmax:30};
-let S={tmp:37.0,ph:7.05,tek:12.4,vol:0.0,ch4:58.0,nh3:2.1,hari:8};
+// CFG.tekmax=1.5 atm (batas overpressure sesuai esai), phmin/phmax=6.8-7.4 (rentang optimal metanogen sesuai esai)
+let CFG={tmin:35,tmax:42,phmin:6.8,phmax:7.4,tekmax:1.5};
+let S={tmp:37.0,ph:7.05,tek:1.20,vol:0.0,ch4:58.0,nh3:2.1,hari:8};
+let prevMolN=null,negTickStreak=0; // untuk hitung dn/dt aktual & proksi "30 menit berturut-turut"
 let tick=0,logData=[],anomaliData=[],notifHistory=[],conCnt=0,sesStart=Date.now();
 let apiOnline=false,apiRetryCount=0;
 
@@ -767,17 +769,17 @@ function toast(msg){const el=document.getElementById('toast');document.getElemen
 function sel(id,v){const el=document.getElementById(id);if(el)el.textContent=v;}
 
 // === AVOGADRO CALC ===
-function calcN(P_kPa,V_m3,T_C){const P=P_kPa*1000,T=T_C+273.15;return(P*V_m3)/(R*T);}
+function calcN(P_atm,V_m3,T_C){const P=P_atm*101325,T=T_C+273.15;return(P*V_m3)/(R*T);} // 1 atm = 101.325 kPa (sesuai ilustrasi esai)
 function calcMol(){
-  const P=+document.getElementById('ci-P').value||12.4;
+  const P=+document.getElementById('ci-P').value||1.2;
   const V=+document.getElementById('ci-V').value||0.05;
   const Tc=+document.getElementById('ci-T').value||37;
-  const T=Tc+273.15,Pa=P*1000;
+  const T=Tc+273.15,Pa=P*101325;
   const n=(Pa*V)/(R*T);
   const PV=Pa*V,RT=R*T;
   document.getElementById('calc-steps').innerHTML=`
     <div class="calc-step"><span>1.</span> T (K) = ${Tc.toFixed(1)} + 273.15 = <span>${T.toFixed(2)} K</span></div>
-    <div class="calc-step"><span>2.</span> P (Pa) = ${P.toFixed(1)} × 1000 = <span>${Pa.toLocaleString('id-ID')} Pa</span></div>
+    <div class="calc-step"><span>2.</span> P (Pa) = ${P.toFixed(2)} atm × 101.325 = <span>${Pa.toLocaleString('id-ID')} Pa</span></div>
     <div class="calc-step"><span>3.</span> n = PV / RT = (${Pa.toLocaleString('id-ID')} × ${V.toFixed(3)}) / (8.314 × ${T.toFixed(2)})</div>
     <div class="calc-step"><span>4.</span> n = ${PV.toFixed(3)} / ${RT.toFixed(3)} = <span>${n.toFixed(4)} mol</span></div>`;
   document.getElementById('calc-n').textContent=n.toFixed(4);
@@ -811,32 +813,35 @@ const cTabung=new Chart(document.getElementById('ch-tabung').getContext('2d'),{t
 
 // Avogadro chart: V vs n (linear)
 const avoV=Array.from({length:10},(_,i)=>+(0.01+i*0.02).toFixed(3));
-const avoN=avoV.map(v=>+calcN(12.4,v,37).toFixed(4));
-new Chart(document.getElementById('ch-avo').getContext('2d'),{type:'scatter',data:{datasets:[{label:'V vs n (Avogadro)',data:avoV.map((v,i)=>({x:v,y:avoN[i]})),borderColor:'#2D6A4F',backgroundColor:'rgba(45,106,79,.15)',showLine:true,tension:0,pointRadius:5,borderWidth:2},{label:'V ∝ n (Linear)',data:[{x:0,y:0},{x:0.18,y:calcN(12.4,0.18,37)}],borderColor:'rgba(240,165,0,.5)',backgroundColor:'transparent',showLine:true,borderDash:[4,4],pointRadius:0,borderWidth:1.5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{font:{size:10}}}},scales:{x:{title:{display:true,text:'Volume V (m³)'},grid:{color:'rgba(0,0,0,.04)'},min:0},y:{title:{display:true,text:'Mol CH₄ (n)'},grid:{color:'rgba(0,0,0,.04)'},min:0}}}});
+const avoN=avoV.map(v=>+calcN(1.2,v,37).toFixed(4));
+new Chart(document.getElementById('ch-avo').getContext('2d'),{type:'scatter',data:{datasets:[{label:'V vs n (Avogadro)',data:avoV.map((v,i)=>({x:v,y:avoN[i]})),borderColor:'#2D6A4F',backgroundColor:'rgba(45,106,79,.15)',showLine:true,tension:0,pointRadius:5,borderWidth:2},{label:'V ∝ n (Linear)',data:[{x:0,y:0},{x:0.18,y:calcN(1.2,0.18,37)}],borderColor:'rgba(240,165,0,.5)',backgroundColor:'transparent',showLine:true,borderDash:[4,4],pointRadius:0,borderWidth:1.5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{font:{size:10}}}},scales:{x:{title:{display:true,text:'Volume V (m³)'},grid:{color:'rgba(0,0,0,.04)'},min:0},y:{title:{display:true,text:'Mol CH₄ (n)'},grid:{color:'rgba(0,0,0,.04)'},min:0}}}});
 
 // ===== FITUR 1: PREDIKSI LOGISTIK + CONFIDENCE INTERVAL =====
 // Kurva logistik fermentasi anaerobik: lag -> eksponensial -> plateau
 // V(t) = L / (1 + e^(-k(t-t0)))   L=plateau volume, k=laju pertumbuhan, t0=titik infleksi
-const PRED_ACC={r2:0.984,mape:3.5};
+// Horizon & interval disesuaikan dengan Lampiran 1 esai: "prediksi produksi gas 6 jam
+// ke depan dengan interval 30 menit". R², RMSE, MAPE mengikuti Lampiran 3 esai (XGBoost).
+const PRED_ACC={r2:0.984,rmse:0.036,mape:3.5};
 function logistic(t,L,k,t0){return L/(1+Math.exp(-k*(t-t0)));}
 function generatePrediction(){
-  const nJam=48,interval=6,steps=nJam/interval; // 8 titik ke depan
+  const nJam=6,interval=0.5,steps=nJam/interval; // 12 titik ke depan, interval 30 menit
   const L=Math.max(0.6,S.vol*2.2+0.4);   // plateau diestimasi dari volume saat ini
-  const k=0.28,t0=18;                    // parameter kurva (titik infleksi ~jam ke-18)
+  const k=0.28,t0=18;                    // parameter kurva (titik infleksi ~jam ke-18, skala harian)
   const labels=[],aktual=[],pred=[],ciUp=[],ciLo=[];
-  // 7 titik histori: pakai data aktual dailyData (7 hari terakhir), bukan kurva sintetis,
-  // supaya sambungan histori→prediksi konsisten skalanya dengan volume gas nyata.
-  for(let i=6;i>=0;i--){
-    labels.push('-'+(i*interval)+'j');
-    const v=dailyData[6-i]!==undefined?dailyData[6-i]:logistic(24-i*interval,L*0.55,k,t0-6);
+  // Histori 3 jam terakhir (6 titik, interval 30 menit) — dijangkarkan ke volume hari
+  // terakhir (dailyData) supaya skala histori↔prediksi tetap konsisten dengan grafik harian.
+  const anchor=dailyData[dailyData.length-1]!==undefined?dailyData[dailyData.length-1]:S.vol;
+  for(let i=5;i>=0;i--){
+    labels.push('-'+(i*interval).toFixed(1).replace('.0','')+'j');
+    const v=Math.max(0,anchor-(i*interval)*0.01); // tren naik landai menuju titik saat ini
     aktual.push(+v.toFixed(3));pred.push(null);ciUp.push(null);ciLo.push(null);
   }
-  // 8 titik prediksi 48 jam ke depan
+  // Prediksi 6 jam ke depan, interval 30 menit
   for(let s=1;s<=steps;s++){
     const jam=s*interval;
-    labels.push('+'+jam+'j');
+    labels.push('+'+(jam%1===0?jam:jam.toFixed(1))+'j');
     const v=logistic(24+jam,L,k,t0);
-    const err=v*(PRED_ACC.mape/100)*(1+s*0.15); // interval melebar makin jauh prediksi
+    const err=v*(PRED_ACC.mape/100)*(1+s*0.08); // interval melebar makin jauh prediksi
     aktual.push(null);pred.push(+v.toFixed(3));
     ciUp.push(+(v+err).toFixed(3));ciLo.push(+(v-err).toFixed(3));
   }
@@ -846,7 +851,7 @@ function generatePrediction(){
   chPred.data.datasets[2].data=ciUp;
   chPred.data.datasets[3].data=ciLo;
   chPred.update('none');
-  sel('pred-acc','R²='+PRED_ACC.r2.toFixed(3)+' · MAPE='+PRED_ACC.mape.toFixed(1)+'%');
+  sel('pred-acc','R²='+PRED_ACC.r2.toFixed(3)+' · RMSE='+PRED_ACC.rmse.toFixed(3)+' m³ · MAPE='+PRED_ACC.mape.toFixed(1)+'%');
 }
 const chPred=new Chart(document.getElementById('ch-pred').getContext('2d'),{type:'line',data:{labels:[],datasets:[
   {label:'Aktual',data:[],borderColor:'#2D6A4F',backgroundColor:'rgba(45,106,79,.08)',fill:true,tension:0.4,borderWidth:2.5,pointRadius:3,spanGaps:false},
@@ -865,7 +870,7 @@ setInterval(()=>{
   // Fluctuate sensors
   S.tmp=Math.max(30,Math.min(45,S.tmp+(Math.random()-.5)*.6));
   S.ph=Math.max(5.8,Math.min(8.0,S.ph+(Math.random()-.5)*.05));
-  S.tek=Math.max(5,Math.min(35,S.tek+(Math.random()-.38)*.4));
+  S.tek=Math.max(0.8,Math.min(1.8,S.tek+(Math.random()-.45)*.02)); // fluktuasi kecil di sekitar 1.2 atm (sesuai ilustrasi esai)
   S.ch4=Math.max(50,Math.min(68,S.ch4+(Math.random()-.5)*.3));
   if(tick%3===0)S.vol=+(S.vol+(0.005+Math.random()*.008)).toFixed(4);
   if(tick%20===0&&S.hari<21)S.hari++;
@@ -885,7 +890,7 @@ setInterval(()=>{
 
   // KPI bar
   sel('kpi-vol',S.vol.toFixed(3)+' m³');sel('kpi-ch4',S.ch4.toFixed(1)+'%');
-  sel('kpi-tmp',S.tmp.toFixed(1)+'°C');sel('kpi-ph',S.ph.toFixed(2));sel('kpi-tek',S.tek.toFixed(1)+' kPa');
+  sel('kpi-tmp',S.tmp.toFixed(1)+'°C');sel('kpi-ph',S.ph.toFixed(2));sel('kpi-tek',S.tek.toFixed(2)+' atm');
 
   // Dashboard metrics
   sel('mv-vol',S.vol.toFixed(3));sel('mv-mol',molN.toFixed(4));sel('mv-tmp',S.tmp.toFixed(1));sel('mv-kwh',kWh.toFixed(2));
@@ -893,11 +898,11 @@ setInterval(()=>{
 
   // Avogadro meter
   sel('ap-P',S.tek.toFixed(3));sel('ap-V',S.vol.toFixed(4));sel('ap-T',(S.tmp+273.15).toFixed(2));
-  sel('avo-P',(S.tek*1000).toFixed(0));sel('avo-V',S.vol.toFixed(3));sel('avo-T',(S.tmp+273.15).toFixed(1));
+  sel('avo-P',(S.tek*101325).toFixed(0));sel('avo-V',S.vol.toFixed(3));sel('avo-T',(S.tmp+273.15).toFixed(1));
   sel('avo-n',molN.toFixed(4));
 
   // Tabung page
-  sel('tb-tmp',S.tmp.toFixed(1));sel('tb-ph',S.ph.toFixed(2));sel('tb-tek',S.tek.toFixed(1));sel('tb-vol',S.vol.toFixed(3));
+  sel('tb-tmp',S.tmp.toFixed(1));sel('tb-ph',S.ph.toFixed(2));sel('tb-tek',S.tek.toFixed(2));sel('tb-vol',S.vol.toFixed(3));
 
   // Update fase tabung proporsi based on fermentasi hari
   const gasH=Math.min(35,10+S.hari*1.2);
@@ -910,7 +915,7 @@ setInterval(()=>{
   sel('tl-gas','~'+gasH.toFixed(0)+'%');sel('tl-cair','~'+cairH.toFixed(0)+'%');sel('tl-padat','~'+padatH.toFixed(0)+'%');
 
   // AI page
-  sel('ai-tmp',S.tmp.toFixed(1));sel('ai-ph',S.ph.toFixed(2));sel('ai-tek',S.tek.toFixed(1));sel('ai-mol',molN.toFixed(4));
+  sel('ai-tmp',S.tmp.toFixed(1));sel('ai-ph',S.ph.toFixed(2));sel('ai-tek',S.tek.toFixed(2));sel('ai-mol',molN.toFixed(4));
 
   // Output page
   updateOutput(S.vol,S.ch4);
@@ -918,37 +923,52 @@ setInterval(()=>{
   // Notif update
   const nn=new Date();sel('notif-time',String(nn.getHours()).padStart(2,'0')+':'+String(nn.getMinutes()).padStart(2,'0'));
   const nb=document.getElementById('notif-body');
-  if(nb)nb.innerHTML=`✅ <strong>AVO-BIO NORMAL</strong><br>Suhu: ${S.tmp.toFixed(1)}°C · pH: ${S.ph.toFixed(2)}<br>Gas: ${S.vol.toFixed(3)} m³ · Tekanan: ${S.tek.toFixed(1)} kPa<br><em style="font-size:10px;color:rgba(255,255,255,.4)">Update otomatis tiap 5 menit</em>`;
+  if(nb)nb.innerHTML=`✅ <strong>AVO-BIO NORMAL</strong><br>Suhu: ${S.tmp.toFixed(1)}°C · pH: ${S.ph.toFixed(2)}<br>Gas: ${S.vol.toFixed(3)} m³ · Tekanan: ${S.tek.toFixed(2)} atm<br><em style="font-size:10px;color:rgba(255,255,255,.4)">Update otomatis tiap 5 menit</em>`;
 
   // Status check & alerts
   const tOk=S.tmp>=CFG.tmin&&S.tmp<=CFG.tmax;
   const phOk=S.ph>=CFG.phmin&&S.ph<=CFG.phmax;
   const tekOk=S.tek<CFG.tekmax;
   const tCrit=S.tmp<CFG.tmin-3||S.tmp>CFG.tmax+3;
-  const phCrit=S.ph<CFG.phmin-.3||S.ph>CFG.phmax+.3;
-  const tekWarn=S.tek>=CFG.tekmax*.8&&S.tek<CFG.tekmax;
-  const tekCrit=S.tek>=CFG.tekmax;
+  const phCrit=S.ph<6.5||S.ph>8.0; // ambang literal esai (bukan relatif ke CFG.phmin/phmax)
+  const tekWarn=S.tek>=CFG.tekmax*.9&&S.tek<CFG.tekmax;
+  const tekCrit=S.tek>=CFG.tekmax; // >=1.5 atm sesuai batas overpressure esai
 
-  const anyD=tCrit||phCrit||tekCrit,anyW=!tOk||!phOk||tekWarn;
+  // Lapisan 1 (Production Drop) — dn/dt dihitung riil dari selisih n antar tick,
+  // dirata-rata per menit. Esai: dn/dt < -0,01 mol/menit selama 30 menit berturut-turut → alert.
+  // Catatan: untuk keperluan demo real-time, "30 menit" diproksikan dengan N tick berturut-turut
+  // (di bawah) karena menunggu 30 menit sungguhan tidak praktis saat presentasi.
+  const tickMinutes=3/60; // interval loop = 3 detik = 0.05 menit
+  let dndt=0;
+  if(prevMolN!==null)dndt=(molN-prevMolN)/tickMinutes;
+  prevMolN=molN;
+  if(dndt<-0.01)negTickStreak++;else negTickStreak=0;
+  const prodDrop=negTickStreak>=10; // proksi demo utk "30 menit berturut-turut"
+
+  const anyD=tCrit||phCrit||tekCrit||prodDrop,anyW=!tOk||!phOk||tekWarn;
   updateStatusDisplay(anyD,anyW,molN);
 
   // Card status
   const tSt=document.getElementById('tb-tmp-st'),pSt=document.getElementById('tb-ph-st'),tkSt=document.getElementById('tb-tek-st');
   if(tSt){tSt.className='m-st '+(tCrit?'st-bad':!tOk?'st-warn':'st-ok');tSt.textContent=(tCrit?'● KRITIS':!tOk?'● Peringatan suhu':'● Target 35–37°C');}
-  if(pSt){pSt.className='m-st '+(phCrit?'st-bad':!phOk?'st-warn':'st-ok');pSt.textContent=(phCrit?'● KRITIS':!phOk?'● Peringatan pH':'● Target 6.8–7.2');}
+  if(pSt){pSt.className='m-st '+(phCrit?'st-bad':!phOk?'st-warn':'st-ok');pSt.textContent=(phCrit?'● KRITIS':!phOk?'● Peringatan pH':'● Target 6.8–7.4');}
   if(tkSt){tkSt.className='m-st '+(tekCrit?'st-bad':tekWarn?'st-warn':'st-ok');tkSt.textContent=(tekCrit?'● TEKANAN KRITIS':tekWarn?'● Tekanan tinggi':'● Normal');}
 
   const msTmp=document.getElementById('ms-tmp');
   if(msTmp){msTmp.className='m-st '+(tCrit?'st-bad':!tOk?'st-warn':'st-ok');msTmp.textContent=(tCrit?'● KRITIS!':!tOk?'● Perhatian':'● Mesofilik 35–37°C');}
 
   // Console log
-  if(tick%8===0){const box=document.getElementById('con'),l=document.createElement('div');l.className='ll ok';const t=new Date();l.innerHTML=`<span class="lt">[${t.toLocaleTimeString('id-ID')}]</span> #${tick} T=${S.tmp.toFixed(1)}°C pH=${S.ph.toFixed(2)} P=${S.tek.toFixed(1)}kPa V=${S.vol.toFixed(3)}m³ n=${molN.toFixed(4)}mol ✓`;box.insertBefore(l,box.firstChild);while(box.children.length>35)box.removeChild(box.lastChild);conCnt++;sel('con-cnt',conCnt+' event');}
+  if(tick%8===0){const box=document.getElementById('con'),l=document.createElement('div');l.className='ll ok';const t=new Date();l.innerHTML=`<span class="lt">[${t.toLocaleTimeString('id-ID')}]</span> #${tick} T=${S.tmp.toFixed(1)}°C pH=${S.ph.toFixed(2)} P=${S.tek.toFixed(2)}atm V=${S.vol.toFixed(3)}m³ n=${molN.toFixed(4)}mol ✓`;box.insertBefore(l,box.firstChild);while(box.children.length>35)box.removeChild(box.lastChild);conCnt++;sel('con-cnt',conCnt+' event');}
 
   // ANOMALY detection -> pakai sendNotification agar konsisten dgn simulasi manual
-  if(tCrit){sendNotification('suhu',{val:S.tmp,limit:CFG.tmax});addAnomali('Suhu',S.tmp.toFixed(1)+' °C','KRITIS','Periksa pemanas/pendingin reaktor segera.');}
+  if(prodDrop&&tick%6===0){
+    const jamHabis=Math.max(1,Math.round(S.vol/Math.max(0.0005,Math.abs(dndt))/60));
+    sendNotification('suhu',{val:S.tmp,dndt,jamHabis});
+    addAnomali('Produksi (dn/dt)',dndt.toFixed(3)+' mol/menit','KRITIS','Periksa suhu reaktor atau kemungkinan kebocoran pipa.');
+  }
   if(phCrit){sendNotification('ph',{val:S.ph});addAnomali('pH',S.ph.toFixed(2),'KRITIS','pH ekstrem. Tambahkan buffer (kapur/kalsium karbonat) atau air bersih.');}
-  if(tekCrit){sendNotification('tekanan',{val:S.tek});addAnomali('Tekanan',S.tek.toFixed(1)+' kPa','KRITIS','Segera buka katup pengaman!');}
-  else if(tekWarn&&tick%4===0){addAnomali('Tekanan',S.tek.toFixed(1)+' kPa','PERINGATAN','Tekanan mendekati batas. Monitor setiap 30 menit.');}
+  if(tekCrit){sendNotification('tekanan',{val:S.tek});addAnomali('Tekanan',S.tek.toFixed(2)+' atm','KRITIS','Segera buka katup pengaman!');}
+  else if(tekWarn&&tick%4===0){addAnomali('Tekanan',S.tek.toFixed(2)+' atm','PERINGATAN','Tekanan mendekati batas 1,5 atm. Monitor setiap 30 menit.');}
   if(!tOk&&!tCrit&&tick%5===0){addAnomali('Suhu',S.tmp.toFixed(1)+' °C','PERINGATAN',S.tmp<CFG.tmin?'Suhu rendah. Tambahkan isolasi atau pemanas.':'Suhu tinggi. Ventilasi atau kurangi beban organik.');}
 
   // Rolling chart
@@ -994,7 +1014,7 @@ function addAnomali(param,val,status,rek){
 
 function addLog(tmp,ph,tek,vol,mol,ok){
   const t=new Date();
-  logData.unshift({ts:t.toLocaleTimeString('id-ID'),tmp:tmp.toFixed(1),ph:ph.toFixed(2),tek:tek.toFixed(1),vol:vol.toFixed(3),mol:mol.toFixed(4),ok});
+  logData.unshift({ts:t.toLocaleTimeString('id-ID'),tmp:tmp.toFixed(1),ph:ph.toFixed(2),tek:tek.toFixed(2),vol:vol.toFixed(3),mol:mol.toFixed(4),ok});
   if(logData.length>20)logData.pop();
   const b=document.getElementById('log-body');
   if(!b)return;
@@ -1003,8 +1023,8 @@ function addLog(tmp,ph,tek,vol,mol,ok){
 }
 
 function saveCfg(){CFG.tmin=+document.getElementById('cfg-tmin').value;CFG.tmax=+document.getElementById('cfg-tmax').value;CFG.phmin=+document.getElementById('cfg-phmin').value;CFG.phmax=+document.getElementById('cfg-phmax').value;CFG.tekmax=+document.getElementById('cfg-tekmax').value;toast('Threshold berhasil disimpan!');}
-function resetCfg(){document.getElementById('cfg-tmin').value=35;document.getElementById('cfg-tmax').value=42;document.getElementById('cfg-phmin').value=6.8;document.getElementById('cfg-phmax').value=7.5;document.getElementById('cfg-tekmax').value=30;saveCfg();toast('Threshold direset ke default.');}
-function simReset(){S={tmp:37.0,ph:7.05,tek:12.4,vol:0.0,ch4:58.0,nh3:2.1,hari:1};tick=0;logData=[];anomaliData=[];toast('Simulasi direset. Hari ke-1.');}
+function resetCfg(){document.getElementById('cfg-tmin').value=35;document.getElementById('cfg-tmax').value=42;document.getElementById('cfg-phmin').value=6.8;document.getElementById('cfg-phmax').value=7.4;document.getElementById('cfg-tekmax').value=1.5;saveCfg();toast('Threshold direset ke default.');}
+function simReset(){S={tmp:37.0,ph:7.05,tek:1.20,vol:0.0,ch4:58.0,nh3:2.1,hari:1};tick=0;logData=[];anomaliData=[];prevMolN=null;negTickStreak=0;toast('Simulasi direset. Hari ke-1.');}
 
 // ===== FITUR 2: OUTPUT PRODUK DINAMIS =====
 function updateOutput(vol,ch4pct){
@@ -1025,12 +1045,13 @@ function fmtNotifTime(){const t=new Date();return t.toLocaleTimeString('id-ID')+
 function sendNotification(type,params){
   let msg='';
   if(type==='suhu'){
-    const dndt=-(Math.random()*0.05+0.01).toFixed(3);
-    const jamHabis=Math.max(1,Math.round(4+Math.random()*8));
+    // Pakai dn/dt aktual jika tersedia (dihitung dari selisih n riil); fallback ke estimasi acak untuk simulasi manual
+    const dndt=(params.dndt!==undefined?params.dndt:-(Math.random()*0.05+0.01)).toFixed(3);
+    const jamHabis=params.jamHabis!==undefined?params.jamHabis:Math.max(1,Math.round(4+Math.random()*8));
     msg=`⚠️ PERINGATAN: Produksi gas menurun drastis (dn/dt = ${dndt} mol/menit). Periksa suhu reaktor (sekarang ${params.val.toFixed(1)}°C) atau kemungkinan kebocoran pipa. Prediksi: gas akan habis dalam ${jamHabis} jam jika tidak ditangani.`;
   }else if(type==='tekanan'){
-    const atm=(params.val/101.325).toFixed(3);
-    msg=`🚨 PERINGATAN DARURAT: Tekanan berlebih! P = ${atm} atm. Segera buka katup pengaman untuk mencegah risiko ledakan. Metana adalah gas eksplosif pada konsentrasi 5-15% di udara.`;
+    // S.tek sudah dalam satuan atm (sesuai ilustrasi esai: batas overpressure 1,5 atm)
+    msg=`🚨 PERINGATAN DARURAT: Tekanan berlebih! P = ${params.val.toFixed(2)} atm. Segera buka katup pengaman untuk mencegah risiko ledakan. Metana adalah gas eksplosif pada konsentrasi 5-15% di udara.`;
   }else if(type==='ph'){
     msg=`⚠️ PERINGATAN: pH tidak optimal (pH = ${params.val.toFixed(2)}). Tambahkan buffer (kapur/kalsium karbonat) atau air bersih untuk menstabilkan fermentasi.`;
   }else{
@@ -1056,9 +1077,14 @@ function renderNotifHistory(){
 function simulasiAnomali(){
   const jenis=['suhu','tekanan','ph'][Math.floor(Math.random()*3)];
   let params,label,val;
-  if(jenis==='suhu'){val=CFG.tmax+3+Math.random()*2;params={val};label='Suhu';}
-  else if(jenis==='tekanan'){val=CFG.tekmax+Math.random()*3;params={val};label='Tekanan';}
-  else{val=CFG.phmax+0.4+Math.random()*0.3;params={val};label='pH';}
+  if(jenis==='suhu'){
+    val=CFG.tmax+3+Math.random()*2;
+    const dndt=-(0.02+Math.random()*0.04);
+    const jamHabis=Math.max(1,Math.round(3+Math.random()*6));
+    params={val,dndt,jamHabis};label='Produksi (dn/dt)';
+  }
+  else if(jenis==='tekanan'){val=CFG.tekmax+Math.random()*0.3;params={val};label='Tekanan';}
+  else{val=8.0+Math.random()*0.3;params={val};label='pH';}
   const msg=sendNotification(jenis,params);
   addAnomali(label,val.toFixed(2),'KRITIS',msg.split('. ')[1]||msg);
   toast('Simulasi anomali '+label+' terkirim!');
@@ -1070,8 +1096,8 @@ function simulasiAnomali(){
   setTimeout(()=>{
     if(Date.now()>=forceCriticalUntil){
       const tOk=S.tmp>=CFG.tmin&&S.tmp<=CFG.tmax,phOk=S.ph>=CFG.phmin&&S.ph<=CFG.phmax;
-      const tCrit=S.tmp<CFG.tmin-3||S.tmp>CFG.tmax+3,phCrit=S.ph<CFG.phmin-.3||S.ph>CFG.phmax+.3;
-      const tekWarn=S.tek>=CFG.tekmax*.8&&S.tek<CFG.tekmax,tekCrit=S.tek>=CFG.tekmax;
+      const tCrit=S.tmp<CFG.tmin-3||S.tmp>CFG.tmax+3,phCrit=S.ph<6.5||S.ph>8.0;
+      const tekWarn=S.tek>=CFG.tekmax*.9&&S.tek<CFG.tekmax,tekCrit=S.tek>=CFG.tekmax;
       updateStatusDisplay(tCrit||phCrit||tekCrit,!tOk||!phOk||tekWarn,calcN(S.tek,S.vol,S.tmp));
     }
   },5100);
@@ -1120,7 +1146,7 @@ setInterval(checkApiConnection,30000); // cek ulang tiap 30 detik
 
 function exportCSV(){
   if(logData.length===0){toast('Belum ada data log untuk diexport.');return;}
-  let csv='Waktu,Suhu (C),pH,Tekanan (kPa),Volume (m3),Mol CH4,Status\n';
+  let csv='Waktu,Suhu (C),pH,Tekanan (atm),Volume (m3),Mol CH4,Status\n';
   logData.forEach(d=>{csv+=`${d.ts},${d.tmp},${d.ph},${d.tek},${d.vol},${d.mol},${d.ok?'OK':'PERINGATAN'}\n`;});
   const blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8;'}); // BOM agar Excel baca UTF-8 dgn benar
   const a=document.createElement('a');
